@@ -8,7 +8,7 @@ def calculate(list):
     mean_flattened = np.mean(matrix)
      #calculating the variance
 
-     git remote set-url origin https://github.com/<github-username>/<repository-name>.git
+     
 
 
 
