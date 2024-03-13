@@ -1,6 +1,8 @@
 import numpy as np
 
-def calculate(list):
+def calculator(list):
+    if list != 9:
+
     matrix = np.array(list).reshape(3,3)
 
     # calculating the mean
@@ -44,15 +46,6 @@ def calculate(list):
 
     return calculations
 
-
-user_input = input('Please enter a list of 9 numbers(separated by space):')
-number_list = list(user_input.split())
-int_list = [int(num) for num in number_list]
-if len(int_list) == 9:
-    calculations = calculate(int_list)
-    print(calculations)
-else:
-    print('Value Error: list must contain 9 numbers')
 
 
 
