@@ -26,9 +26,21 @@ def calculate(list):
      min_axis1 = min(matrix, axis = 1)
      min_axis2 = min(matrix, axis = 0)
      min_flattened = min(matrix)
-     
 
-     
+     #CALCULATING THE SUM 
+     sum_axis1 = sum(matrix, axis = 1)
+     sum_axis2 = sum(matrix, axis = 0)
+     sum_flattened = sum(matrix)
+
+
+     calculations {
+        mean: [mean_axis1, mean_axis2, mean_flattened]
+        variance: [var_axis1, var_axis2, var_flattened]
+        standard_deviation: [std_axis1, std_axis2, std_flattened]
+        max: [max_axis1, max_axis2, max_flattened]
+        min: [min_axis1, min_axis2, min_flattened]
+        sum: [sum_axis1, sum_axis2, sum_flattened]
+     }
 
 
 
